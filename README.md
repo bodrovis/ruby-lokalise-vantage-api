@@ -1,0 +1,1 @@
+# Ruby SDK for Lokalise Vantage API

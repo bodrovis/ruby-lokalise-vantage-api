@@ -1,0 +1,48 @@
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Bundler
+/.bundle/
+/vendor/bundle/
+/vendor/cache/
+
+# Built gems
+/pkg/
+*.gem
+
+# Test coverage
+/coverage/
+
+# Temporary files and logs
+/tmp/
+/log/
+*.log
+*.tmp
+*.swp
+*.swo
+*~
+
+# Ruby documentation
+/.yardoc/
+/_yardoc/
+/rdoc/
+
+# Language servers and tools
+/.ruby-lsp/
+/.solargraph/
+/.rspec_status
+
+# IDEs and editors
+/.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+Desktop.ini

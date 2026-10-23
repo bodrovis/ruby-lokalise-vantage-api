@@ -1,0 +1,16 @@
+# frozen_string_literal: true
+
+module LokaliseVantage
+  module Models
+    # Base class for mapping API responses to model attributes.
+    class Base
+      def initialize(json)
+        self.class::ATTRIBUTES.each do |name|
+          json_key = name.to_s.gsub(/_([a-z])/) { Regexp.last_match(1).upcase }
+
+          instance_variable_set(:"@#{name}", json[json_key])
+        end
+      end
+    end
+  end
+end
