@@ -2,6 +2,7 @@ PATH
   remote: .
   specs:
     lokalise-vantage (0.0.1)
+      addressable (~> 2.9)
       httpx (~> 1.9)
       oj (~> 3.17)
       zeitwerk (~> 2.8)

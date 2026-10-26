@@ -1,0 +1,11 @@
+detectors:
+  TooManyInstanceVariables:
+    exclude:
+      - LokaliseVantage::Client
+  
+  ModuleInitialize:
+    exclude:
+      - LokaliseVantage::Concerns::Paginated
+
+  TooManyStatements:
+    max_statements: 10

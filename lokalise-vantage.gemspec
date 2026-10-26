@@ -17,6 +17,7 @@ Gem::Specification.new do |spec|
                    'lib/**/*.rb',
                    'lokalise-vantage.gemspec']
 
+  spec.add_dependency 'addressable', '~> 2.9'
   spec.add_dependency 'httpx', '~> 1.9'
   spec.add_dependency 'oj', '~> 3.17'
   spec.add_dependency 'zeitwerk', '~> 2.8'

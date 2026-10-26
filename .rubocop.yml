@@ -6,8 +6,15 @@ AllCops:
   TargetRubyVersion: 3.4
   NewCops: enable
 
+Metrics/MethodLength:
+  Max: 15
+  
 RSpec/MultipleExpectations:
   Max: 20
 
 RSpec/ExampleLength:
   Max: 50
+
+Metrics/BlockLength:
+  Exclude:
+    - spec/**/*.rb

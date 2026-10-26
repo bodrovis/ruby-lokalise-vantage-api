@@ -1,0 +1,113 @@
+{
+  "data": [
+    {
+      "projectId": "019d29d9-de47-7a57-ac2d-53194197d213",
+      "teamId": "9ef160a0-d4c7-45f5-ab80-bc9e22e95b12",
+      "name": "Alice",
+      "description": "",
+      "baseLanguage": {
+        "languageId": "019d29d9-de52-7ba2-87c6-b5355ebf9c72",
+        "locale": "en"
+      },
+      "targetLanguages": [
+        {
+          "languageId": "019d29d9-de52-7ba2-87c6-b5355efd2aa7",
+          "locale": "fr"
+        }
+      ],
+      "translationSettings": {
+        "workflowType": "AI_HUMAN_REVIEW",
+        "reviewThreshold": "FULL_REVIEW",
+        "reviewTurnaroundDays": 5
+      },
+      "contentSourceType": "file",
+      "contentSourceName": null,
+      "projectType": "marketing"
+    },
+    {
+      "projectId": "019d3e4b-4342-71fd-9ade-7a058973ea62",
+      "teamId": "9ef160a0-d4c7-45f5-ab80-bc9e22e95b12",
+      "name": "GDrive",
+      "description": "",
+      "baseLanguage": {
+        "languageId": "019d3e4b-4349-7c7a-897a-6ace780a1b70",
+        "locale": "en"
+      },
+      "targetLanguages": [
+        {
+          "languageId": "019d3e4b-4349-7c7a-897a-6ace78f91fa2",
+          "locale": "fr"
+        }
+      ],
+      "translationSettings": {
+        "workflowType": "AI_ONLY",
+        "reviewThreshold": null,
+        "reviewTurnaroundDays": 5
+      },
+      "contentSourceType": "google-drive",
+      "contentSourceName": "Google Drive",
+      "projectType": "marketing_integrations"
+    },
+    {
+      "projectId": "019e644f-6cf6-7171-bc38-6b9e766f800a",
+      "teamId": "9ef160a0-d4c7-45f5-ab80-bc9e22e95b12",
+      "name": "Webflow demo",
+      "description": "",
+      "baseLanguage": {
+        "languageId": "019e644f-6cfc-7263-924f-7004527bc987",
+        "locale": "en"
+      },
+      "targetLanguages": [
+        {
+          "languageId": "019e644f-6cfc-7263-924f-700453ddeb6a",
+          "locale": "de"
+        },
+        {
+          "languageId": "019e644f-6cfc-7263-924f-7004535775e6",
+          "locale": "es"
+        },
+        {
+          "languageId": "019e644f-6cfc-7263-924f-700452ae70a8",
+          "locale": "fr"
+        }
+      ],
+      "translationSettings": {
+        "workflowType": "AI_HUMAN_REVIEW",
+        "reviewThreshold": "CRITICAL_MAJOR_MINOR",
+        "reviewTurnaroundDays": 5
+      },
+      "contentSourceType": null,
+      "contentSourceName": null,
+      "projectType": "marketing_integrations"
+    },
+    {
+      "projectId": "019eac5b-c3c1-7d41-ac54-b546cf011625",
+      "teamId": "9ef160a0-d4c7-45f5-ab80-bc9e22e95b12",
+      "name": "Braze",
+      "description": "",
+      "baseLanguage": {
+        "languageId": "019eac5b-c3c1-7d41-ac54-b546cf011626",
+        "locale": "en"
+      },
+      "targetLanguages": [
+        {
+          "languageId": "019eac5b-c3c1-7d41-ac54-b546cf011627",
+          "locale": "fr"
+        }
+      ],
+      "translationSettings": {
+        "workflowType": "AI_HUMAN_REVIEW",
+        "reviewThreshold": "CRITICAL_MAJOR_MINOR",
+        "reviewTurnaroundDays": 5
+      },
+      "contentSourceType": "file",
+      "contentSourceName": null,
+      "projectType": "marketing"
+    }
+  ],
+  "meta": {
+    "count": 4,
+    "cursor": "eyIxIjo2NDY3NTJ9",
+    "hasMore": true
+  }
+}

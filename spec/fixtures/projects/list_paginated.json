@@ -1,0 +1,65 @@
+{
+  "data": [
+    {
+      "projectId": "019e644f-6cf6-7171-bc38-6b9e766f800a",
+      "teamId": "9ef160a0-d4c7-45f5-ab80-bc9e22e95b12",
+      "name": "Webflow demo",
+      "description": "",
+      "baseLanguage": {
+        "languageId": "019e644f-6cfc-7263-924f-7004527bc987",
+        "locale": "en"
+      },
+      "targetLanguages": [
+        {
+          "languageId": "019e644f-6cfc-7263-924f-700453ddeb6a",
+          "locale": "de"
+        },
+        {
+          "languageId": "019e644f-6cfc-7263-924f-7004535775e6",
+          "locale": "es"
+        },
+        {
+          "languageId": "019e644f-6cfc-7263-924f-700452ae70a8",
+          "locale": "fr"
+        }
+      ],
+      "translationSettings": {
+        "workflowType": "AI_HUMAN_REVIEW",
+        "reviewThreshold": "CRITICAL_MAJOR_MINOR",
+        "reviewTurnaroundDays": 5
+      },
+      "contentSourceType": null,
+      "contentSourceName": null,
+      "projectType": "marketing_integrations"
+    },
+    {
+      "projectId": "019eac5b-c3c1-7d41-ac54-b546cf011625",
+      "teamId": "9ef160a0-d4c7-45f5-ab80-bc9e22e95b12",
+      "name": "Braze",
+      "description": "",
+      "baseLanguage": {
+        "languageId": "019eac5b-c3c1-7d41-ac54-b546cf011626",
+        "locale": "en"
+      },
+      "targetLanguages": [
+        {
+          "languageId": "019eac5b-c3c1-7d41-ac54-b546cf011627",
+          "locale": "fr"
+        }
+      ],
+      "translationSettings": {
+        "workflowType": "AI_HUMAN_REVIEW",
+        "reviewThreshold": "CRITICAL_MAJOR_MINOR",
+        "reviewTurnaroundDays": 5
+      },
+      "contentSourceType": "file",
+      "contentSourceName": null,
+      "projectType": "marketing"
+    }
+  ],
+  "meta": {
+    "count": 2,
+    "cursor": "eyIxIjo2NDY3NTN9",
+    "hasMore": false
+  }
+}

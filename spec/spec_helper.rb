@@ -27,6 +27,8 @@ require 'webmock/rspec'
 
 require 'lokalise_vantage'
 
+Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].each { |f| require f }
+
 RSpec.configure do |config|
   config.disable_monkey_patching!
   config.mock_with(:rspec) do |mocks|
@@ -34,4 +36,7 @@ RSpec.configure do |config|
   end
 
   config.order = :random
+
+  config.include ClientHelpers
+  config.include ApiStubHelpers
 end
