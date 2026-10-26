@@ -7,5 +7,6 @@ module LokaliseVantage
     include Request
 
     include Projects
+    include ProjectLanguages
   end
 end

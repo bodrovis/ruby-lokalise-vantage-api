@@ -5,6 +5,10 @@ require 'httpx'
 module LokaliseVantage
   # Configures HTTP connections to the Vantage API.
   module Connection
+    def close
+      connection.close
+    end
+
     private
 
     attr_reader :connection
@@ -19,7 +23,22 @@ module LokaliseVantage
       timeouts = connection_timeouts
       options[:timeout] = timeouts unless timeouts.empty?
 
-      @connection = HTTPX.with(**options)
+      session = connection_plugins.reduce(HTTPX) do |httpx, plugin|
+        httpx.plugin(plugin)
+      end
+
+      session = session.with(**options)
+      session = session.with_proxy(uri: proxy) if proxy
+
+      @connection = session
+    end
+
+    def connection_plugins
+      plugins = [:retries]
+      plugins << :persistent if persistent
+      plugins << :proxy if proxy
+
+      plugins
     end
 
     def connection_headers

@@ -1,0 +1,14 @@
+
+{
+  "data": [
+    {
+      "projectId": "project-123",
+      "name": "Test project"
+    }
+  ],
+  "meta": {
+    "count": 1,
+    "cursor": null,
+    "hasMore": false
+  }
+}
