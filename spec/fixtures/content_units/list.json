@@ -1,0 +1,25 @@
+{
+  "data": [
+    {
+      "id": "019d29da-1111-7111-8111-111111111111",
+      "projectId": "019d29d9-de47-7a57-ac2d-53194197d213",
+      "type": "HTML_FILE",
+      "key": "welcome.title",
+      "position": 0,
+      "sourceSegmentsCount": 1
+    },
+    {
+      "id": "019d29da-2222-7222-8222-222222222222",
+      "projectId": "019d29d9-de47-7a57-ac2d-53194197d213",
+      "type": "HTML_FILE",
+      "key": "welcome.description",
+      "position": 1,
+      "sourceSegmentsCount": 3
+    }
+  ],
+  "meta": {
+    "count": 2,
+    "cursor": "019d29da-2222-7222-8222-222222222222",
+    "hasMore": true
+  }
+}

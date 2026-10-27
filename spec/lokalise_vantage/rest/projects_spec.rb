@@ -15,7 +15,7 @@ RSpec.describe LokaliseVantage::Rest::Projects do
 
     expect(project).to be_a(LokaliseVantage::Models::Project)
     expect(project.project_id).to eq(project_id)
-    expect(project.name).to eq('Alice')
+    expect(project.name).to eq('There was a name here. It is gone now.')
     expect(project.base_language['locale']).to eq('en')
     expect(project.target_languages.first['locale']).to eq('fr')
     expect(project.translation_settings['workflowType']).to eq('AI_HUMAN_REVIEW')
@@ -40,6 +40,7 @@ RSpec.describe LokaliseVantage::Rest::Projects do
       expect(projects.page_count).to eq(4)
 
       expect(projects[0].project_id).to eq(project_id)
+      expect(projects[0].name).to eq('There was a name here. It is gone now.')
       expect(projects[1].name).to eq('GDrive')
     end
 

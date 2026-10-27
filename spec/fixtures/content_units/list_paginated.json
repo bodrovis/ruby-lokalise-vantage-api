@@ -1,0 +1,17 @@
+{
+  "data": [
+    {
+      "id": "019d29da-3333-7333-8333-333333333333",
+      "projectId": "019d29d9-de47-7a57-ac2d-53194197d213",
+      "type": "HTML_FILE",
+      "key": "footer.text",
+      "position": 2,
+      "sourceSegmentsCount": 1
+    }
+  ],
+  "meta": {
+    "count": 1,
+    "cursor": "019d29da-3333-7333-8333-333333333333",
+    "hasMore": false
+  }
+}
