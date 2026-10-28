@@ -7,6 +7,7 @@ module LokaliseVantage
     include Request
 
     include ContentUnits
+    include Exports
     include Projects
     include ProjectItems
     include ProjectLanguages

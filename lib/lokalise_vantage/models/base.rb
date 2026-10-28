@@ -13,6 +13,11 @@ module LokaliseVantage
             warnings: response.fetch('warnings', [])
           )
         end
+
+        def attributes(fields)
+          const_set(:ATTRIBUTES, fields.freeze)
+          attr_reader(*fields)
+        end
       end
 
       def initialize(json, warnings: [])

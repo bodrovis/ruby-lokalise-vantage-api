@@ -4,15 +4,13 @@ module LokaliseVantage
   module Models
     # Represents an item belonging to a Vantage project.
     class ProjectItem < Base
-      ATTRIBUTES = %i[
+      attributes %i[
         id
         project_id
         name
         created_at
         updated_at
-      ].freeze
-
-      attr_reader(*ATTRIBUTES)
+      ]
     end
   end
 end

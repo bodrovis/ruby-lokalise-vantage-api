@@ -4,7 +4,7 @@ module LokaliseVantage
   module Models
     # Represents a task in a Vantage project.
     class Task < Base
-      ATTRIBUTES = %i[
+      attributes %i[
         id
         public_id
         title
@@ -15,9 +15,7 @@ module LokaliseVantage
         due_date
         created_at
         requested_by
-      ].freeze
-
-      attr_reader(*ATTRIBUTES)
+      ]
     end
   end
 end

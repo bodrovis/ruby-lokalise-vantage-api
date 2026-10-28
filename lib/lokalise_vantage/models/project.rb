@@ -4,7 +4,7 @@ module LokaliseVantage
   module Models
     # Represents a Vantage project.
     class Project < Base
-      ATTRIBUTES = %i[
+      attributes %i[
         project_id
         team_id
         name
@@ -15,9 +15,7 @@ module LokaliseVantage
         content_source_type
         content_source_name
         project_type
-      ].freeze
-
-      attr_reader(*ATTRIBUTES)
+      ]
     end
   end
 end

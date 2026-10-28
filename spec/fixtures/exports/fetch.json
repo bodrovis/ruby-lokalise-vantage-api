@@ -1,0 +1,10 @@
+{
+  "data": {
+    "exportId": "01a18300-4444-df8e-7dd9-9015ca6c4332",
+    "status": "COMPLETED",
+    "createdAt": "2026-10-28T14:30:00.000Z",
+    "totalItemsCount": 10,
+    "processedItemsCount": 10,
+    "failReason": null
+  }
+}

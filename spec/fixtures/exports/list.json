@@ -1,0 +1,25 @@
+{
+  "data": [
+    {
+      "exportId": "01a18300-4673-dba9-f455-e2e7a99e8768",
+      "status": "COMPLETED",
+      "createdAt": "2026-10-28T14:30:00.000Z",
+      "totalItemsCount": 2,
+      "processedItemsCount": 2,
+      "failReason": null
+    },
+    {
+      "exportId": "01a18300-4444-df8e-7dd9-9015ca6c4332",
+      "status": "IN_PROGRESS",
+      "createdAt": "2026-10-28T14:29:00.000Z",
+      "totalItemsCount": 10,
+      "processedItemsCount": 4,
+      "failReason": null
+    }
+  ],
+  "meta": {
+    "count": 2,
+    "cursor": "01a18300-4444-df8e-7dd9-9015ca6c4332",
+    "hasMore": true
+  }
+}

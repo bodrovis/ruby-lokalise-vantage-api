@@ -2,12 +2,8 @@
 
 RSpec.describe LokaliseVantage::Models::Base do
   let(:model_class) do
-    klass = Class.new(described_class) do
-      attr_reader :id, :project_id
-    end
-
-    klass.tap do |klass|
-      klass.const_set(:ATTRIBUTES, %i[id project_id].freeze)
+    Class.new(described_class) do
+      attributes %i[id project_id]
     end
   end
 
@@ -67,6 +63,18 @@ RSpec.describe LokaliseVantage::Models::Base do
 
     it 'raises an error when response data is missing' do
       expect { model_class.from_response({}) }.to raise_error(KeyError)
+    end
+  end
+
+  describe '.attributes' do
+    it 'defines attribute readers and stores their names' do
+      expect(model_class::ATTRIBUTES).to eq(%i[id project_id])
+      expect(model_class::ATTRIBUTES).to be_frozen
+
+      model = model_class.new({ 'id' => '123', 'projectId' => '456' })
+
+      expect(model.id).to eq('123')
+      expect(model.project_id).to eq('456')
     end
   end
 end

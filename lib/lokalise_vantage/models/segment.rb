@@ -4,7 +4,7 @@ module LokaliseVantage
   module Models
     # Represents a segment belonging to a Vantage content unit.
     class Segment < Base
-      ATTRIBUTES = %i[
+      attributes %i[
         id
         number
         value
@@ -16,9 +16,7 @@ module LokaliseVantage
         metadata
         created_at
         updated_at
-      ].freeze
-
-      attr_reader(*ATTRIBUTES)
+      ]
     end
   end
 end
