@@ -1,0 +1,25 @@
+{
+  "data": [
+    {
+      "id": "019d29da-4444-7444-8444-444444444444",
+      "number": 2,
+      "value": "Goodbye!",
+      "status": "TRANSLATING",
+      "lastChangeSource": "TRANSLATION_MEMORY",
+      "contentLanguageId": "019d29d9-de52-7ba2-87c6-b5355ebf9c72",
+      "contentUnitId": "019d29da-2222-7222-8222-222222222222",
+      "projectId": "019d29d9-de47-7a57-ac2d-53194197d213",
+      "metadata": {
+        "prefix": "",
+        "suffix": ""
+      },
+      "createdAt": "2026-03-26T11:16:00.000Z",
+      "updatedAt": "2026-03-26T11:16:00.000Z"
+    }
+  ],
+  "meta": {
+    "count": 1,
+    "cursor": "019d29da-4444-7444-8444-444444444444",
+    "hasMore": false
+  }
+}

@@ -4,13 +4,20 @@ module LokaliseVantage
   module Models
     # Base class for mapping API responses to model attributes.
     class Base
+      attr_reader :warnings
+
       class << self
         def from_response(response)
-          new(response.fetch('data'))
+          new(
+            response.fetch('data'),
+            warnings: response.fetch('warnings', [])
+          )
         end
       end
 
-      def initialize(json)
+      def initialize(json, warnings: [])
+        @warnings = warnings
+
         self.class::ATTRIBUTES.each do |name|
           json_key = name.to_s.gsub(/_([a-z])/) { Regexp.last_match(1).upcase }
 

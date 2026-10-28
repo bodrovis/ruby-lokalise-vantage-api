@@ -1,0 +1,41 @@
+{
+  "data": [
+    {
+      "id": "019d29da-1111-7111-8111-111111111111",
+      "number": 0,
+      "value": "Hello world!",
+      "status": "TRANSLATING",
+      "lastChangeSource": "TRANSLATION_MEMORY",
+      "contentLanguageId": "019d29d9-de52-7ba2-87c6-b5355ebf9c72",
+      "contentUnitId": "019d29da-3fee-8fad-b137-bb110afc5af0",
+      "projectId": "019d29d9-de47-7a57-ac2d-53194197d213",
+      "metadata": {
+        "prefix": "<p>",
+        "suffix": "</p>"
+      },
+      "createdAt": "2026-03-26T11:14:22.114Z",
+      "updatedAt": "2026-03-26T11:14:22.496Z"
+    },
+    {
+      "id": "019d29da-3333-7333-8333-333333333333",
+      "number": 1,
+      "value": "Welcome!",
+      "status": "TRANSLATING",
+      "lastChangeSource": "TRANSLATION_MEMORY",
+      "contentLanguageId": "019d29d9-de52-7ba2-87c6-b5355ebf9c72",
+      "contentUnitId": "019d29da-2222-7222-8222-222222222222",
+      "projectId": "019d29d9-de47-7a57-ac2d-53194197d213",
+      "metadata": {
+        "prefix": "",
+        "suffix": ""
+      },
+      "createdAt": "2026-03-26T11:15:00.000Z",
+      "updatedAt": "2026-03-26T11:15:00.000Z"
+    }
+  ],
+  "meta": {
+    "count": 2,
+    "cursor": "019d29da-3333-7333-8333-333333333333",
+    "hasMore": true
+  }
+}
