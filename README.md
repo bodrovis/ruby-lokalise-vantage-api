@@ -1,6 +1,9 @@
 # Ruby SDK for Lokalise Vantage API
 
+![Gem](https://img.shields.io/gem/v/lokalise-vantage)
 ![CI](https://github.com/bodrovis/ruby-lokalise-vantage-api/actions/workflows/ci.yml/badge.svg)
+[![Code Coverage](https://qlty.sh/gh/bodrovis/projects/ruby-lokalise-vantage-api/coverage.svg)](https://qlty.sh/gh/bodrovis/projects/ruby-lokalise-vantage-api)
+[![Maintainability](https://qlty.sh/gh/bodrovis/projects/ruby-lokalise-vantage-api/maintainability.svg)](https://qlty.sh/gh/bodrovis/projects/ruby-lokalise-vantage-api)
 
 Opinionated Ruby SDK for the [Lokalise Vantage API](https://developers.lokalise.com/reference/lokalise-vantage-api-introduction).
 
