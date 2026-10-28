@@ -1,0 +1,41 @@
+{
+  "data": [
+    {
+      "id": "task-789",
+      "publicId": "TASK-3",
+      "title": "Review updated content",
+      "type": "review",
+      "status": "created",
+      "description": "Review updated segments",
+      "taskAssignments": [
+        {
+          "languageId": "language-456",
+          "assignees": [],
+          "progress": {
+            "completedUnits": 1,
+            "totalUnits": 2,
+            "completedWords": 5,
+            "totalWords": 10
+          },
+          "segments": [
+            {
+              "id": "segment-123",
+              "unitId": "unit-123",
+              "status": "pending",
+              "createdAt": "2026-10-28T14:21:05.694Z",
+              "completedAt": null
+            }
+          ]
+        }
+      ],
+      "dueDate": "2026-11-20T12:00:00.000Z",
+      "createdAt": "2026-10-28T16:00:00.000Z",
+      "requestedBy": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+    }
+  ],
+  "meta": {
+    "count": 1,
+    "cursor": "3fa85f64-5717-4562-b3fc-2c963f66afa7",
+    "hasMore": false
+  }
+}

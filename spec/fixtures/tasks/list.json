@@ -1,0 +1,50 @@
+{
+  "data": [
+    {
+      "id": "task-123",
+      "publicId": "TASK-1",
+      "title": "Review French translations",
+      "type": "review",
+      "status": "created",
+      "description": "Review the latest translations",
+      "taskAssignments": [
+        {
+          "languageId": "language-123",
+          "assignees": [
+            {
+              "contributorId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+              "type": "user"
+            }
+          ],
+          "progress": {
+            "completedUnits": 2,
+            "totalUnits": 10,
+            "completedWords": 15,
+            "totalWords": 100
+          },
+          "segments": []
+        }
+      ],
+      "dueDate": "2026-11-10T12:00:00.000Z",
+      "createdAt": "2026-10-28T14:21:05.694Z",
+      "requestedBy": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+    },
+    {
+      "id": "task-456",
+      "publicId": "TASK-2",
+      "title": "Review German translations",
+      "type": "review",
+      "status": "created",
+      "description": "Review German content",
+      "taskAssignments": [],
+      "dueDate": "2026-11-15T12:00:00.000Z",
+      "createdAt": "2026-10-28T15:00:00.000Z",
+      "requestedBy": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+    }
+  ],
+  "meta": {
+    "count": 2,
+    "cursor": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    "hasMore": true
+  }
+}

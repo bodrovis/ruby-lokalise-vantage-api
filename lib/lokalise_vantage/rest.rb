@@ -11,5 +11,6 @@ module LokaliseVantage
     include ProjectItems
     include ProjectLanguages
     include Segments
+    include Tasks
   end
 end
