@@ -8,10 +8,13 @@ module LokaliseVantage
 
     include ContentUnits
     include Exports
+    include Imports
     include Projects
     include ProjectItems
     include ProjectLanguages
     include Segments
     include Tasks
+    include TranslationStatuses
+    include Uploads
   end
 end

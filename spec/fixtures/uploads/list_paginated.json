@@ -1,0 +1,20 @@
+{
+  "data": [
+    {
+      "uploadId": "019d29da-3333-7333-8333-333333333333",
+      "batchId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "fileName": "fr.json",
+      "size": 512,
+      "createdAt": "2026-10-28T18:04:00.000Z",
+      "status": "IMPORTED",
+      "wordCount": 48,
+      "locale": "fr",
+      "itemId": "019d29da-4444-7444-8444-444444444444"
+    }
+  ],
+  "meta": {
+    "count": 1,
+    "cursor": "019d29da-3333-7333-8333-333333333333",
+    "hasMore": false
+  }
+}

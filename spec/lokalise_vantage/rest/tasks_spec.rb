@@ -6,6 +6,7 @@ RSpec.describe LokaliseVantage::Rest::Tasks do
   let(:path) { "teams/#{team_id}/projects/#{project_id}/tasks" }
 
   describe '#tasks' do
+    # rubocop:disable-next RSpec/MultipleExpectations
     it 'returns a collection of tasks' do
       stub_vantage_request(
         method: :get,

@@ -1,0 +1,32 @@
+{
+  "data": [
+    {
+      "uploadId": "019d29da-1111-7111-8111-111111111111",
+      "batchId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "fileName": "en.json",
+      "size": 256,
+      "createdAt": "2026-10-28T18:02:48.056Z",
+      "status": "UPLOADED",
+      "wordCount": 25,
+      "locale": "en",
+      "itemId": null
+    },
+    {
+      "uploadId": "019d29da-2222-7222-8222-222222222222",
+      "batchId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "fileName": "broken.json",
+      "size": 128,
+      "createdAt": "2026-10-28T18:03:00.000Z",
+      "status": "UPLOAD_FAILED",
+      "error": {
+        "code": "UPLOAD_FAILED",
+        "message": "File validation failed"
+      }
+    }
+  ],
+  "meta": {
+    "count": 2,
+    "cursor": "019d29da-2222-7222-8222-222222222222",
+    "hasMore": true
+  }
+}

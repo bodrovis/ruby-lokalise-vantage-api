@@ -1,0 +1,20 @@
+{
+  "data": {
+    "batchId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    "uploads": [
+      {
+        "fileName": "fr.json",
+        "uploadId": "019d29da-2222-7222-8222-222222222222",
+        "status": "UPLOADING",
+        "upload": {
+          "url": "https://example.com/upload",
+          "fields": {
+            "key": "test/fr.json",
+            "policy": "test-policy"
+          },
+          "expiresAt": "2026-10-28T20:00:00.000Z"
+        }
+      }
+    ]
+  }
+}
