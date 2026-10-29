@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "Factor A";
+  src: url("../assets/fonts/FactorA-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Factor A";
+  src: url("../assets/fonts/FactorA-Medium.woff2") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* Main text, navigation, buttons */
+  --sl-font: "Factor A", sans-serif;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.site-title {
+  font-family: "Factor A", sans-serif;
+  font-weight: 500;
+}

@@ -1,0 +1,87 @@
+---
+title: Lokalise Ruby SDK
+description: Ruby SDK for the Lokalise APIs, including Vantage.
+---
+
+The `lokalise-api-next` gem provides a Ruby interface for the [Lokalise Vantage API](https://developers.lokalise.com/). It handles HTTP requests, authentication, response parsing, and API errors, allowing you to work with Vantage resources through Ruby methods and objects.
+
+The SDK uses [HTTPX](https://github.com/HoneyryderChuck/httpx) for HTTP communication and supports configurable timeouts, proxies, connection persistence, and automatic retries for certain network failures.
+
+## Getting started
+
+The SDK requires Ruby 3.4 or newer.
+
+Create a client using your Lokalise API token:
+
+```ruby
+require 'lokalise_api_next'
+
+client = LokaliseApiNext.client_vantage(
+  ENV.fetch('LOKALISE_VANTAGE_TOKEN')
+)
+```
+
+You can then retrieve a project:
+
+```ruby
+project = client.project('project-id')
+
+puts project.name
+puts project.project_type
+puts project.base_language['locale']
+```
+
+## Pagination
+
+Some Vantage API endpoints support cursor-based pagination. The SDK exposes pagination information through collection methods and lets you request additional pages using `limit` and `after`.
+
+For example, retrieve the first 10 projects:
+
+```ruby
+projects = client.projects(team_id, limit: 10)
+
+projects.each do |project|
+  puts project.name
+end
+```
+
+You can inspect the collection's pagination metadata:
+
+```ruby
+projects.size       # Number of loaded models
+projects.page_count # Number of items returned on this page
+projects.cursor     # Cursor for the next page
+projects.more?      # Whether more results are available
+```
+
+To retrieve the next page, pass the returned cursor as `after`:
+
+```ruby
+if projects.more?
+  next_page = client.projects(
+    team_id,
+    limit: 10,
+    after: projects.cursor
+  )
+end
+```
+
+The SDK does not automatically fetch additional pages. You can continue requesting pages until `more?` returns `false`. Cursors are opaque values: pass them back unchanged rather than attempting to decode or construct them. Omit `after` for the first page.
+
+The supported pagination parameters and limits may vary by endpoint.
+
+## Error handling
+
+When Vantage returns an API error, the SDK raises `LokaliseApiNext::Error` with the error message, machine-readable code, HTTP status, and optional details.
+
+```ruby
+begin
+  client.project('invalid-project-id')
+rescue LokaliseApiNext::Error => e
+  puts e.message
+  puts e.code
+  puts e.status
+end
+```
+
+Responses containing multiple API errors raise `LokaliseApiNext::Error::Aggregate`, which provides access to individual errors through `errors`.
