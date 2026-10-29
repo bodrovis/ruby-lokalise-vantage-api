@@ -25,7 +25,7 @@ require 'httpx'
 require 'httpx/adapters/webmock'
 require 'webmock/rspec'
 
-require 'lokalise_vantage'
+require 'lokalise_api_next'
 
 Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].each { |f| require f }
 

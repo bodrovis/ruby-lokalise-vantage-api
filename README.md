@@ -1,13 +1,13 @@
-# Ruby SDK for Lokalise Vantage API
+# Ruby SDK for Lokalise API
 
 ![Gem](https://img.shields.io/gem/v/lokalise-vantage)
-![CI](https://github.com/bodrovis/ruby-lokalise-vantage-api/actions/workflows/ci.yml/badge.svg)
-[![Code Coverage](https://qlty.sh/gh/bodrovis/projects/ruby-lokalise-vantage-api/coverage.svg)](https://qlty.sh/gh/bodrovis/projects/ruby-lokalise-vantage-api)
-[![Maintainability](https://qlty.sh/gh/bodrovis/projects/ruby-lokalise-vantage-api/maintainability.svg)](https://qlty.sh/gh/bodrovis/projects/ruby-lokalise-vantage-api)
+![CI](https://github.com/lokalise/ruby-lokalise-next-api/actions/workflows/ci.yml/badge.svg)
+[![Code Coverage](https://qlty.sh/gh/lokalise/projects/ruby-lokalise-next-api/coverage.svg)](https://qlty.sh/gh/lokalise/projects/ruby-lokalise-next-api)
+[![Maintainability](https://qlty.sh/gh/lokalise/projects/ruby-lokalise-next-api/maintainability.svg)](https://qlty.sh/gh/lokalise/projects/ruby-lokalise-next-api)
 
 Opinionated Ruby SDK for the [Lokalise Vantage API](https://developers.lokalise.com/reference/lokalise-vantage-api-introduction).
 
-The `lokalise-vantage` gem provides a Ruby interface for working with Lokalise Vantage resources. It handles authentication, HTTP requests, response parsing, and API errors, and returns Ruby models and collections.
+The `lokalise-api-next` gem provides a Ruby interface for working with Lokalise Vantage resources. It handles authentication, HTTP requests, response parsing, and API errors, and returns Ruby models and collections.
 
 ## Requirements
 
@@ -35,7 +35,7 @@ Create a client using your Lokalise API token:
 ```ruby
 require 'lokalise_vantage'
 
-client = LokaliseVantage.client(
+client = LokaliseApiNext.client(
   ENV.fetch('LOKALISE_VANTAGE_TOKEN')
 )
 ```
