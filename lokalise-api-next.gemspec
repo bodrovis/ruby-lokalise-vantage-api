@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.email                 = ['elskruk@proton.me']
   spec.summary = 'Ruby SDK for the Lokalise API'
   spec.description = 'A Ruby client for interacting with the Lokalise API.'
-  spec.homepage = 'https://github.com/lokalise/ruby-lokalise-next-api'
+  spec.homepage = 'https://github.com/lokalise/ruby-lokalise-api-next'
   spec.license               = 'BSD-3-Clause'
   spec.required_ruby_version = '>= 3.4'
 

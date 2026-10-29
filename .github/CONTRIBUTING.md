@@ -12,8 +12,8 @@ You'll need:
 Clone the repository and install the dependencies:
 
 ```bash
-git clone https://github.com/bodrovis/ruby-lokalise-vantage-api.git
-cd ruby-lokalise-vantage-api
+git clone https://github.com/lokalise/ruby-lokalise-api-next.git
+cd ruby-lokalise-api-next
 bundle install
 ```
 
@@ -27,13 +27,7 @@ Run the entire test suite:
 bundle exec rspec
 ```
 
-To run a specific test file:
-
-```bash
-bundle exec rspec spec/models/content_unit_spec.rb
-```
-
-Please add or update tests when introducing new features or fixing bugs. Tests should not require access to the live Lokalise Vantage API unless explicitly designed as integration tests.
+Please add or update tests when introducing new features or fixing bugs. Tests should not require access to the live Lokalise API unless explicitly designed as integration tests.
 
 ## Code quality
 

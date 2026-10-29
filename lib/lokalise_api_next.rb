@@ -6,11 +6,11 @@ require 'oj'
 loader = Zeitwerk::Loader.for_gem
 loader.setup
 
-# Ruby SDK for the Lokalise Vantage API.
+# Ruby SDK for Lokalise APIs.
 module LokaliseApiNext
   class << self
-    def client(token, params = {})
-      @client = LokaliseApiNext::Client.new token, params
+    def client_vantage(token, params = {})
+      ClientVantage.new(token, params)
     end
   end
 end

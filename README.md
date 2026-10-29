@@ -1,9 +1,9 @@
 # Ruby SDK for Lokalise API
 
-![Gem](https://img.shields.io/gem/v/lokalise-vantage)
-![CI](https://github.com/lokalise/ruby-lokalise-next-api/actions/workflows/ci.yml/badge.svg)
-[![Code Coverage](https://qlty.sh/gh/lokalise/projects/ruby-lokalise-next-api/coverage.svg)](https://qlty.sh/gh/lokalise/projects/ruby-lokalise-next-api)
-[![Maintainability](https://qlty.sh/gh/lokalise/projects/ruby-lokalise-next-api/maintainability.svg)](https://qlty.sh/gh/lokalise/projects/ruby-lokalise-next-api)
+![Gem](https://img.shields.io/gem/v/lokalise-api-next)
+![CI](https://github.com/lokalise/ruby-lokalise-api-next/actions/workflows/ci.yml/badge.svg)
+[![Code Coverage](https://qlty.sh/gh/lokalise/projects/ruby-lokalise-api-next/coverage.svg)](https://qlty.sh/gh/lokalise/projects/ruby-lokalise-api-next)
+[![Maintainability](https://qlty.sh/gh/lokalise/projects/ruby-lokalise-api-next/maintainability.svg)](https://qlty.sh/gh/lokalise/projects/ruby-lokalise-api-next)
 
 Opinionated Ruby SDK for the [Lokalise Vantage API](https://developers.lokalise.com/reference/lokalise-vantage-api-introduction).
 
@@ -19,7 +19,7 @@ The `lokalise-api-next` gem provides a Ruby interface for working with Lokalise 
 Add the gem to your Gemfile:
 
 ```ruby
-gem 'lokalise-vantage'
+gem 'lokalise-api-next'
 ```
 
 Then run:
@@ -33,9 +33,9 @@ bundle install
 Create a client using your Lokalise API token:
 
 ```ruby
-require 'lokalise_vantage'
+require 'lokalise_api_next'
 
-client = LokaliseApiNext.client(
+client_vantage = LokaliseApiNext.client_vantage(
   ENV.fetch('LOKALISE_VANTAGE_TOKEN')
 )
 ```
@@ -43,7 +43,7 @@ client = LokaliseApiNext.client(
 For example, retrieve a project:
 
 ```ruby
-project = client.project('project-id')
+project = client_vantage.project('project-id')
 
 puts project.name
 puts project.description
@@ -52,7 +52,7 @@ puts project.description
 Or list projects belonging to a team:
 
 ```ruby
-projects = client.projects('team-id', limit: 20)
+projects = client_vantage.projects('team-id', limit: 20)
 
 projects.each do |project|
   puts "#{project.project_id}: #{project.name}"

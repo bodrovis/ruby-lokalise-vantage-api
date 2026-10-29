@@ -160,7 +160,7 @@ RSpec.describe 'Vantage upload and import E2E' do # rubocop:disable RSpec/Descri
     )
 
     begin
-      client = test_client('test-token')
+      client = test_client_vantage('test-token')
 
       staged = client.stage_uploads(
         project_id,

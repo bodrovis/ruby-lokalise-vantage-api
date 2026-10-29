@@ -19,16 +19,16 @@ RSpec.describe LokaliseApiNext::Connection do
         fixture: 'connection/projects.json'
       )
 
-      client = test_client('test-token', persistent: true, open_timeout: 10, timeout: 10)
+      client = test_client_vantage('test-token', persistent: true, open_timeout: 10, timeout: 10)
 
       begin
         project = client.project(project_id)
         projects = client.projects(team_id)
 
-        expect(project).to be_a(LokaliseApiNext::Models::Project)
+        expect(project).to be_a(LokaliseApiNext::Models::Vantage::Project)
         expect(project.name).to eq('Test project')
 
-        expect(projects).to be_a(LokaliseApiNext::Collections::Projects)
+        expect(projects).to be_a(LokaliseApiNext::Collections::Vantage::Projects)
         expect(projects.size).to eq(1)
         expect(projects.first.name).to eq('Test project')
         expect(projects.more?).to be false
@@ -42,7 +42,7 @@ RSpec.describe LokaliseApiNext::Connection do
     let(:proxy_url) { 'http://localhost:8080' }
 
     it 'configures HTTPX to use a proxy' do
-      client = test_client('test-token', proxy: proxy_url)
+      client = test_client_vantage('test-token', proxy: proxy_url)
 
       begin
         request = client.send(:connection).build_request(
@@ -63,12 +63,12 @@ RSpec.describe LokaliseApiNext::Connection do
         fixture: 'connection/project.json'
       )
 
-      client = test_client('test-token', proxy: proxy_url)
+      client = test_client_vantage('test-token', proxy: proxy_url)
 
       begin
         project = client.project(project_id)
 
-        expect(project).to be_a(LokaliseApiNext::Models::Project)
+        expect(project).to be_a(LokaliseApiNext::Models::Vantage::Project)
         expect(project.name).to eq('Test project')
       ensure
         client.close

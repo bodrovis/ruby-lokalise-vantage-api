@@ -44,7 +44,7 @@ module LokaliseApiNext
     def connection_headers
       {
         'Accept' => 'application/json',
-        'User-Agent' => "lokalise-vantage/#{LokaliseApiNext::VERSION}",
+        'User-Agent' => "ruby-lokalise-api-next/#{LokaliseApiNext::VERSION}",
         token_header => token
       }
     end
