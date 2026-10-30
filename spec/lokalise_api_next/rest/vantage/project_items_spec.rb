@@ -17,7 +17,7 @@ RSpec.describe LokaliseApiNext::Rest::Vantage::ProjectItems do
       expect(items.size).to eq(2)
       expect(items).to all(be_a(LokaliseApiNext::Models::Vantage::ProjectItem))
 
-      expect(items.page_count).to eq(2)
+      expect(items.meta_count).to eq(2)
       expect(items.cursor).to eq('019efe60-00ef-a7a1-c448-74e764fdbdea')
       expect(items.more?).to be false
 
@@ -50,7 +50,7 @@ RSpec.describe LokaliseApiNext::Rest::Vantage::ProjectItems do
       expect(items.first).to be_a(LokaliseApiNext::Models::Vantage::ProjectItem)
       expect(items.first.name).to eq('notes.txt')
 
-      expect(items.page_count).to eq(1)
+      expect(items.meta_count).to eq(1)
       expect(items.cursor).to eq('019eff00-1111-7222-8333-444455556666')
       expect(items.more?).to be false
     end

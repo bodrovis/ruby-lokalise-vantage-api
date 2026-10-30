@@ -20,7 +20,7 @@ RSpec.describe LokaliseApiNext::Rest::Vantage::Tasks do
       expect(tasks.size).to eq(2)
       expect(tasks).to all(be_a(LokaliseApiNext::Models::Vantage::Task))
 
-      expect(tasks.page_count).to eq(2)
+      expect(tasks.meta_count).to eq(2)
       expect(tasks.cursor).to eq('3fa85f64-5717-4562-b3fc-2c963f66afa6')
       expect(tasks.more?).to be true
 
@@ -83,7 +83,7 @@ RSpec.describe LokaliseApiNext::Rest::Vantage::Tasks do
       expect(segment['status']).to eq('pending')
       expect(segment['completedAt']).to be_nil
 
-      expect(tasks.page_count).to eq(1)
+      expect(tasks.meta_count).to eq(1)
       expect(tasks.cursor).to eq('3fa85f64-5717-4562-b3fc-2c963f66afa7')
       expect(tasks.more?).to be false
     end

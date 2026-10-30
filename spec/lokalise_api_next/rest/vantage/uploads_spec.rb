@@ -25,7 +25,7 @@ RSpec.describe LokaliseApiNext::Rest::Vantage::Uploads do
       expect(uploads.size).to eq(2)
       expect(uploads).to all(be_a(LokaliseApiNext::Models::Vantage::Upload))
 
-      expect(uploads.page_count).to eq(2)
+      expect(uploads.meta_count).to eq(2)
       expect(uploads.cursor).to eq('019d29da-2222-7222-8222-222222222222')
       expect(uploads.more?).to be true
 
@@ -83,7 +83,7 @@ RSpec.describe LokaliseApiNext::Rest::Vantage::Uploads do
       expect(uploads.first.status).to eq('IMPORTED')
       expect(uploads.first.item_id).to eq('019d29da-4444-7444-8444-444444444444')
 
-      expect(uploads.page_count).to eq(1)
+      expect(uploads.meta_count).to eq(1)
       expect(uploads.cursor).to eq('019d29da-3333-7333-8333-333333333333')
       expect(uploads.more?).to be false
     end

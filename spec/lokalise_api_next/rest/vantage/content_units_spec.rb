@@ -19,7 +19,7 @@ RSpec.describe LokaliseApiNext::Rest::Vantage::ContentUnits do
       expect(units.size).to eq(2)
       expect(units).to all(be_a(LokaliseApiNext::Models::Vantage::ContentUnit))
 
-      expect(units.page_count).to eq(2)
+      expect(units.meta_count).to eq(2)
       expect(units.cursor).to eq('019d29da-2222-7222-8222-222222222222')
       expect(units.more?).to be true
 
@@ -56,7 +56,7 @@ RSpec.describe LokaliseApiNext::Rest::Vantage::ContentUnits do
       expect(units.first).to be_a(LokaliseApiNext::Models::Vantage::ContentUnit)
       expect(units.first.key).to eq('footer.text')
 
-      expect(units.page_count).to eq(1)
+      expect(units.meta_count).to eq(1)
       expect(units.cursor).to eq('019d29da-3333-7333-8333-333333333333')
       expect(units.more?).to be false
     end

@@ -19,7 +19,7 @@ RSpec.describe LokaliseApiNext::Rest::Vantage::Segments do
       expect(segments.size).to eq(2)
       expect(segments).to all(be_a(LokaliseApiNext::Models::Vantage::Segment))
 
-      expect(segments.page_count).to eq(2)
+      expect(segments.meta_count).to eq(2)
       expect(segments.cursor).to eq('019d29da-3333-7333-8333-333333333333')
       expect(segments.more?).to be true
 
@@ -63,7 +63,7 @@ RSpec.describe LokaliseApiNext::Rest::Vantage::Segments do
       expect(segments.first.value).to eq('Goodbye!')
       expect(segments.first.number).to eq(2)
 
-      expect(segments.page_count).to eq(1)
+      expect(segments.meta_count).to eq(1)
       expect(segments.cursor).to eq('019d29da-4444-7444-8444-444444444444')
       expect(segments.more?).to be false
     end

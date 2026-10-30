@@ -220,7 +220,7 @@ Supported pagination parameters:
 ```ruby
 uploads = client.uploads(project_id, limit: 20)
 
-puts uploads.page_count
+puts uploads.meta_count
 puts uploads.cursor
 puts uploads.more?
 
@@ -233,7 +233,7 @@ if uploads.more?
 end
 ```
 
-`page_count` represents the number of uploads in the current page, not the total number of uploads in the project.
+`meta_count` represents the number of uploads in the current page, not the total number of uploads in the project.
 
 ## Create an import
 

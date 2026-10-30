@@ -37,7 +37,7 @@ RSpec.describe LokaliseApiNext::Rest::Vantage::Projects do
       expect(projects).to all(be_a(LokaliseApiNext::Models::Vantage::Project))
       expect(projects.cursor).to eq('eyIxIjo2NDY3NTJ9')
       expect(projects.more?).to be true
-      expect(projects.page_count).to eq(4)
+      expect(projects.meta_count).to eq(4)
 
       expect(projects[0].project_id).to eq(project_id)
       expect(projects[0].name).to eq('There was a name here. It is gone now.')
@@ -61,7 +61,7 @@ RSpec.describe LokaliseApiNext::Rest::Vantage::Projects do
       expect(projects.size).to eq(2)
       expect(projects).to all(be_a(LokaliseApiNext::Models::Vantage::Project))
 
-      expect(projects.page_count).to eq(2)
+      expect(projects.meta_count).to eq(2)
       expect(projects.cursor).to eq('eyIxIjo2NDY3NTN9')
       expect(projects.more?).to be false
 

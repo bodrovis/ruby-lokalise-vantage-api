@@ -19,7 +19,7 @@ RSpec.describe LokaliseApiNext::Rest::Vantage::Exports do
       expect(exports.size).to eq(2)
       expect(exports).to all(be_a(LokaliseApiNext::Models::Vantage::Export))
 
-      expect(exports.page_count).to eq(2)
+      expect(exports.meta_count).to eq(2)
       expect(exports.cursor).to eq('01a18300-4444-df8e-7dd9-9015ca6c4332')
       expect(exports.more?).to be true
 
@@ -63,7 +63,7 @@ RSpec.describe LokaliseApiNext::Rest::Vantage::Exports do
       expect(exports.first.status).to eq('COMPLETED')
       expect(exports.first.processed_items_count).to eq(10)
 
-      expect(exports.page_count).to eq(1)
+      expect(exports.meta_count).to eq(1)
       expect(exports.cursor).to eq('01a18300-4444-df8e-7dd9-9015ca6c4332')
       expect(exports.more?).to be false
     end
