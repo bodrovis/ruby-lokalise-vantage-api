@@ -63,7 +63,7 @@ The SDK also supports configurable timeouts, automatic retries, proxies, and per
 
 ## Documentation
 
-See the **[GitHub Wiki](../../wiki)** for usage examples, client configuration, pagination, and available API operations.
+See **[lokalise.github.io/ruby-lokalise-api-next/](https://lokalise.github.io/ruby-lokalise-api-next/)** for usage examples, client configuration, pagination, and available API operations.
 
 ## Development and testing
 
